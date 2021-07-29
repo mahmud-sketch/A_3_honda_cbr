@@ -11,54 +11,147 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- fontawsome -->
     <script src="https://kit.fontawesome.com/e9ef051916.js" crossorigin="anonymous"></script>
-    <title>Hello, world!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        header {
+            color: white;
+            background-color: #264653;
+        }
+
+        nav a {
+            color: white;
+        }
+
+        button {
+            background-color: #E76F51;
+            color: white;
+        }
+
+        .btnOutline {
+            border: 1px solid #E76F51;
+            color: #E76F51;
+        }
+
+        .coloredText,
+        .fa-star {
+            color: #E76F51;
+        }
+
+        .greyscale {
+            filter: grayscale(100%);
+        }
+
+        .modal * {
+            color: tomato;
+        }
+    </style>
+    <title>Honda CBR</title>
 </head>
 
 <body>
-    <header class="container-fluid bg-info">
+    <header class="container-fluid pt-4">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-reset" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-reset" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-reset" href=" #">News</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-reset" href=" #">Contact</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link ms-5 px-4 pt-0" href=" #"><button
+                                    class="border-0 rounded px-3 py-2">Login</button></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="container py-5 mb-5">
             <div class="row d-flex justify-content-around">
-                <div class="col-lg-5 py-5 my-auto">
-                    <p>computer controlled digital transised with advanced</p>
-                    <h1>Honda CBR 300R</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore iste obcaecati, aut tempora
-                        molestias quo architecto officiis </p>
-                    <button class="px-5 py-3 rounded border-0">purchase</button>
+                <div class="col-lg-6 col-10 mt-5 pt-3 pe-5">
+                    <p>Computer-controlled digital transistorized with electronic advance</p>
+                    <h1 class="fw-bold">Honda CBR 300R</h1>
+                    <p class="pe-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                        officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <button class=" px-5 py-2 rounded border-0" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Purchase</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">How will You Pay?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    we have support for all kinds of payments system.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cash</button>
+                                    <button type="button" class="btn btn-primary">Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-lg-5 py-5">
-                    <img src="images/header-bike.png" class="d-block" alt="">
+                <div class="col-lg-5 col-10 py-3">
+                    <img src="images/header-bike.png" class="d-block w-100" alt="">
                 </div>
             </div>
         </div>
     </header>
     <main>
         <!-- featured bikes 2021 -->
-        <div class="container my-5">
-            <div>
-                <h1 class="mx-auto">featured bikes 2021</h1>
-                <p class="mx-auto">best bike collection</p>
+        <div class="container my-5 pb-4">
+            <div class="my-5 py-5">
+                <h1 class="text-center fw-bold">Featured Bikes 2021</h1>
+                <p class="text-center coloredText">Best bike collection</p>
             </div>
             <div class="row d-flex justify-content-around">
+                <div class="col-lg-3"><img src="images/feature-bike.jpg" class="d-block w-100 greyscale" alt=""></div>
                 <div class="col-lg-3"><img src="images/feature-bike.jpg" class="d-block w-100" alt=""></div>
-                <div class="col-lg-3"><img src="images/feature-bike.jpg" class="d-block w-100" alt=""></div>
-                <div class="col-lg-3"><img src="images/feature-bike.jpg" class="d-block w-100" alt=""></div>
+                <div class="col-lg-3"><img src="images/feature-bike.jpg" class="d-block w-100 greyscale" alt=""></div>
             </div>
         </div>
         <!-- Latest News -->
         <div class="container my-5 py-5">
-            <div class="row">
-                <h1 class="mx-auto">Latest News</h1>
+            <div class="pt-5 pb-4">
+                <h1 class="text-center fw-bold">Latest News</h1>
             </div>
             <div class="row row-cols-1 row-cols-lg-3 g-4 my-3">
                 <div class="cols">
                     <div class="card p-3" style="width: 25rem;">
                         <img src="images/bike-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Ducati XDIAVEL S-73</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                            <h5 class="card-title fw-bold">Ducati XDIAVEL S-73</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                                fermentum amet faucibus sed id nisi lectus at.</p>
+                            <a href="#"><button class="border-0 rounded px-3 py-2">Read More</button></a>
                         </div>
                     </div>
                 </div>
@@ -66,11 +159,10 @@
                     <div class="card  p-3" style="width: 25rem;">
                         <img src="images/bike-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Motorcycles & Scooters</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                            <h5 class="card-title fw-bold">Motorcycles & Scooters</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                                fermentum amet faucibus sed id nisi lectus at.</p>
+                            <a href="#" class="btn btnOutline">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -78,11 +170,10 @@
                     <div class="card  p-3" style="width: 25rem;">
                         <img src="images/bike-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">2021 Honda CBR500R</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                            <h5 class="card-title fw-bold">2021 Honda CBR500R</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                                fermentum amet faucibus sed id nisi lectus at.</p>
+                            <a href="#" class="btn btnOutline">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -90,174 +181,233 @@
         </div>
         <!-- Happy Clients Says -->
         <div class="container">
-            <h1>Happy <span>Clients Says</span></h1>
-            <div class="row row-cols-1 row-cols-lg-3 g-4 my-3">
+            <div>
+                <h1 class="text-center">Happy <span class="coloredText">Clients Says</span></h1>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3 g-5 my-3">
                 <div class="cols">
-                    <div class="card p-3">
+                    <div class="card py-5">
                         <div class="d-flex justify-content-center">
-                            <img src=" images/user-1.png" class="card-img-top" style="width: 15rem;" alt="...">
+                            <img src=" images/user-1.png" class="card-img-top mx-auto" style="width: 15rem;" alt="...">
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <h6>Rading Miles</h6>
-                            <h6>Banker</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="cols">
-                    <div class="card p-3">
-                        <img src=" images/user-2.png" class="card-img-top" style="width: 15rem;" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <h6>Rading Miles</h6>
-                            <h6>Banker</h6>
+                            <p class="card-text text-center">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                            <div class="text-center">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h6 class="text-center text-info my-4">Rading Miles</h6>
+                            <h6 class="text-center">Banker</h6>
                         </div>
                     </div>
                 </div>
                 <div class="cols">
-                    <div class="card p-3">
-                        <img src=" images/user-3.png" class="card-img-top" style="width: 15rem;" alt="...">
+                    <div class="card py-5">
+                        <div class="d-flex justify-content-center">
+                            <img src=" images/user-2.png" class="card-img-top mx-auto" style="width: 15rem;" alt="...">
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <h6>Rading Miles</h6>
-                            <h6>Banker</h6>
+                            <p class="card-text text-center">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                            <div class="text-center">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h6 class="text-center text-info my-4">Rading Miles</h6>
+                            <h6 class="text-center">Banker</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div class="card py-5">
+                        <div class="d-flex justify-content-center">
+                            <img src=" images/user-3.png" class="card-img-top mx-auto" style="width: 15rem;" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                            <div class="text-center">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h6 class="text-center text-info my-4">Rading Miles</h6>
+                            <h6 class="text-center">Banker</h6>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Frequently Asked Questons -->
-        <div class="container">
+        <div class="container mt-5 py-5">
+            <div class="my-5 py-5">
+                <h1 class="text-center fw-bold">Frequently Asked <span class="coloredText">Questons</span></h1>
+            </div>
             <div class="row">
                 <div class="col-lg-5">
                     <img src="images/faq.png" class="d-block w-100" alt="">
                 </div>
                 <div class="col-lg-6 ms-auto">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
+                        <div class="accordion-item mb-3 border border-1">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Accordion Item #1
+                                    What are the most important things I should know about riding a bike?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until
-                                    the collapse plugin adds the appropriate classes that we use to style each element.
-                                    These classes control the overall appearance, as well as the showing and hiding via
-                                    CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Safety First! Always obey the rules of the road. Obey all traffic signals, signs,
+                                    and laws. Get in the mindset of “driving” your bike—not just “riding” your bike.
+                                    This will help you be a more focused and legally compliant bike rider.
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Accordion Item #1
+                        <div class="accordion-item mt-2 mb-4 border border-1">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can I tell if my helmet is old and I need a new one?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until
-                                    the collapse plugin adds the appropriate classes that we use to style each element.
-                                    These classes control the overall appearance, as well as the showing and hiding via
-                                    CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Usually when your helmet is more than two years old and it's completely worn-torn,
+                                    then you may think of buying a new helmet. other than this there is another sign
+                                    that when helmets natural colors are faded, then u need to think on that.
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Accordion Item #1
+                        <div class="accordion-item my-2 border border-1">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    My bike has been in storage is it safe to ride?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until
-                                    the collapse plugin adds the appropriate classes that we use to style each element.
-                                    These classes control the overall appearance, as well as the showing and hiding via
-                                    CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Eventhough it's safe, but we still recommend that you yourself run a test on youe
+                                    bike whether eingine is ok, oils are enough. Specially chechk your brake and geraing
+                                    system.
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Accordion Item #1
+                        <div class="accordion-item my-2 border border-1">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    What rules should I follow when riding my bike?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until
-                                    the collapse plugin adds the appropriate classes that we use to style each element.
-                                    These classes control the overall appearance, as well as the showing and hiding via
-                                    CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    You should follow all the traffic rules that you were tested while taking drivig
+                                    license. specially dont overspeed where speed id limited and do not cross a vehicle
+                                    from left side and always give indiccatos while takind sideways.
                                 </div>
                             </div>
                         </div>
                     </div>
+
 
                 </div>
             </div>
+            <hr>
 
+        </div>
+
+        <div class="container mb-5">
+
+            <div class="row">
+                <div class="col-lg-4 d-flex align-items-center mx-auto ">
+                    <h1 class="coloredText fw-bold">Fill the Form and Order Now</h1>
+                </div>
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-1">
+                            <label for="exampleInputBikeModel" class="form-label">Bike Model</label>
+                            <input type="text" class="form-control" id="exampleInputBikeModel">
+                        </div>
+                        <div class="mb-1">
+                            <label for="exampleInputName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="exampleInputName">
+                        </div>
+                        <div class="mb-1">
+                            <label for="exampleInputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="exampleInputAddress">
+                        </div>
+                        <div class="mb-1">
+                            <label for="exampleInputShippingAddress" class="form-label">Shipping Address</label>
+                            <input type="text" class="form-control" id="exampleInputShippingAddress">
+                        </div>
+                        <div class="mb-1">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Order Now</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
 
 
     </main>
     <footer>
+        <div class="container-fluid bg-dark text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-12 my-5 py-5">
+                        <ul class="list-group list-group-horizontal">
+                            <li class="list-group-item border border-0 bg-dark text-light">DownloadNow</li>
+                            <li class="list-group-item border border-0 bg-dark text-light">License</li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal">
+                            <li class="list-group-item border border-0 bg-dark text-light">About</li>
+                            <li class="list-group-item border border-0 bg-dark text-light">Featurs</li>
+                            <li class="list-group-item border border-0 bg-dark text-light">Pricing</li>
+                            <li class="list-group-item border border-0 bg-dark text-light">Careers</li>
+                            <li class="list-group-item border border-0 bg-dark text-light">Help</li>
+                            <li class="list-group-item border border-0 bg-dark text-light">PrivacyPolicy</li>
+                        </ul>
+                        <p class="text-light my-5 ms-3">&copy;2020 bike All rihgts rserved</p>
+
+                    </div>
+                    <div class="col-lg-3 col-12 ms-auto">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </footer>
+
 
 
 
